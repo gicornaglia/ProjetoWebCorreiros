@@ -10,10 +10,9 @@ namespace ProjetoWebCorreiros.Steps.PorEnderecoECep
 {
     public class BuscaCepSteps : Hooks
     {
-        // AQUI EU VOU DAR AÇÃO PARA CADA ELEMENTO E CADA ELEMENTO TERA SUA CLASSE 
         public static void DigitaCepInvalidoNoCampoCep(string Cep)
         {
-            Driver.FindElement(BuscaCepPage.campoProcuraCep).SendKeys(Cep); //Falta colocar CPF AQUI
+            Driver.FindElement(BuscaCepPage.campoProcuraCep).SendKeys(Cep); 
         }
 
         public static void ClickBotaoBuscar()
